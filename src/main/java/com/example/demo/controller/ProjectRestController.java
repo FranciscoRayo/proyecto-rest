@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Project;
 import com.example.demo.service.RestService;
@@ -24,5 +25,14 @@ public class ProjectRestController {
 	public List<Project> listProjectRest() {
 		return restServ.getProjects();
 	}
+	
+	@GetMapping(path="/backoffice/proyectos/{id}")
+	public Project detailProject(@PathVariable Integer id) {
+		Project project = restServ.findById(id);
+		return project;
+	}
+	
+	
+	
 }
 
