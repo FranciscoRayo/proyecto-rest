@@ -8,4 +8,6 @@ public interface RestService {
 
 	public List<Project> getProjects();
 
+	public Project findById(Integer id);
+
 }

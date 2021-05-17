@@ -16,4 +16,10 @@ public class RestServiceImpl implements RestService{
 	public List<Project> getProjects() {
 		return restDao.findAll();
 	}
+
+	@Override
+	public Project findById(Integer id) {
+		return restDao.findById(id).orElse(null);
+	}
+	
 }
