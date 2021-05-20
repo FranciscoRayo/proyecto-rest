@@ -1,12 +1,5 @@
 package com.example.demo.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 /*
  * Nombre Clase: Client.java
  * Descripcion: Clase que representa a los clientes con los que ha trabajado la empresa e incluye:
@@ -14,6 +7,13 @@ import javax.persistence.Table;
  * Fecha: 11/05/2021
  * Version: 1.0
  * Autor: Rocio Jimenez Moreno  **/
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "clientes")
